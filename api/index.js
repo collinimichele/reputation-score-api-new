@@ -15,7 +15,7 @@ module.exports = async (req, res) => {
 
     const query = `"${nome} ${cognome}" ${keyword}`.trim();
 
-    const serpApiKey = 'LA_TUA_SERPAPI_KEY_QUI'; // SOSTITUISCI CON LA TUA KEY REALE
+    const serpApiKey = f2f22d2ee84bb3910888e51bfc6e7074fd426152c059f5417747f923517441d5
     const engines = ['google', 'bing'];
 
     let allSnippets = [];
@@ -36,7 +36,7 @@ module.exports = async (req, res) => {
 
     allSnippets = [...new Set(allSnippets)].slice(0, 20);
 
-    const hfToken = 'Bearer LA_TUO_HF_TOKEN_QUI'; // SOSTITUISCI CON IL TUO TOKEN REALE
+    const hfToken = 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
     const hfUrl = 'https://api-inference.huggingface.co/models/nlptown/bert-base-multilingual-uncased-sentiment';
 
     let negative = 0;
